@@ -1,0 +1,40 @@
+<!doctype html>
+<!--
+Popup HTML for Feels Like - Emotion Analysis Extension
+ -->
+<html>
+  <head>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Feels Popup</title>
+    <!--
+      - JavaScript and HTML must be in separate files: see Chrome's Content Security
+      - Policy documentation[1] for details and explanation.
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+    
+	 
+	 <script src="js/popup.js"></script>
+	  <script src="j.js"></script>
+	 -->
+	 <script src="canvasjs.min.js"></script>
+	
+	 <script src="new.js"></script>
+    
+	 
+  </head>
+  <body>
+  <h2>Emotion detected from the page</h2>
+	<div id="chartContainer" style="height: 400px; width: 100%;"></div>
+    <div id="js-legend" class="chart-legend"></div>
+        Anger:
+        <span id="anger"></span><br>
+        Disgust:
+        <span id="disgust"></span><br>
+        Fear:
+        <span id="fear"></span><br>
+        Joy:
+        <span id="joy"></span><br>
+        Sadness:
+        <span id="sadness"></span>
+        <h5>Source: <span id="site"></span></h5>
+</body>
+</html>
